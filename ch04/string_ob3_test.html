@@ -1,0 +1,21 @@
+<script>
+    var userEmail = prompt("당신의 이메일 주소는?", "");
+    var arrUrl = [".co.kr", ".com", ".net", ".or.kr", ".go.kr"];
+
+    var check1 = false;
+    var chekc2 = false;
+
+    if(userEmail.indexOf("@") > 0) {check1 = true;}     // email 유효성 확인을 위해 indexOf를 이용해 '@'를 검출
+
+    for (var i = 0; i < arrUrl.length; i++) {
+        if(userEmail.indexOf(arrUrl[i]) > 0) {
+            chekc2 = true;
+        }
+    }
+
+    if(check1 && chekc2) {
+        document.write(userEmail); 
+    } else {
+        alert("이메일 형식이 잘못되었습니다.");
+    }
+</script> 
