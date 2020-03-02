@@ -1,0 +1,21 @@
+<head>
+<meta charset="UTF-8">
+<title>제이쿼리 그만하고 싶다고.</title>
+<script src="js/jquery.js"></script>
+<script>
+    $(function() {
+        $(".txt1").closest("div")       // 상위 요소에서 가장 가까운 <div>를 선택.
+        .css({
+            "border" : "2px solid #f00"
+        });
+    });
+</script>
+</head>
+<body>
+    <h1 class="title">선택자</h1>
+    <div>
+        <div>
+            <p class="txt1"내용></p>
+        </div>
+    </div>
+</body>
