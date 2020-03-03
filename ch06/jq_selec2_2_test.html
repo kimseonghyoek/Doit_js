@@ -4,7 +4,10 @@
     <script src="js/jquery.js"></script>
     <script>
         $(function() {
-        $("#menu li:even")
+        $("#menu li:even")      // 선택한 요소 중 홀수 번째(짝수 index) 요소만 선택
+        .css({"background-color":"#ff0"});
+
+        $("#menu li:odd")       // 선택한 요소 중 짝수 번째(홀수 index) 요소만 선택
         .css({"background-color":"#0ff"});
         });
     </script>
