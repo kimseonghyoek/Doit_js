@@ -5,13 +5,13 @@
     <script>
         $(function() {
         $("#menu li").eq(2)
-        .css({"background-color":"#ff0"});
+        .css({"background-color":"#ff0"});      // 지정 index 보다 작은
 
         $("#menu li:lt(2)")
-        .css({"background-color":"#0ff"});
+        .css({"background-color":"#0ff"});      // 지정 index
 
         $("#menu li:gt(2)")
-        .css({"background-color":"#f0f"});
+        .css({"background-color":"#f0f"});      // 지정 index 보다 큰
         });
     </script>
 </head>
