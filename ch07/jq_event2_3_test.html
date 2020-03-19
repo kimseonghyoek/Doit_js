@@ -1,0 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트</title>
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function() {
+        $("#rel_site").on("change", function() {
+            $(".txt").text($(this).val());
+        });
+    });
+    </script>
+</head>
+<body>
+    <select id="rel_site">
+        <option value="">사이트 선택</option>
+        <option value="www.google.com">google</option>
+        <option value="www.naver.com">naver</option>
+        <option value="www.daum.net">daum</option>
+    </select>
+</body>
